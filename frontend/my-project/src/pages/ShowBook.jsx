@@ -13,7 +13,9 @@ function ShowBook() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/book/${id}`);
+        const response = await axios.get(
+          `https://mern-bookstore-x14c.onrender.com/book/${id}`
+        );
         setBook([response.data]);
         setLoading(false);
       } catch (e) {

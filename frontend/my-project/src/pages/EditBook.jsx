@@ -18,7 +18,10 @@ function EditBook() {
     validationSchema: validationSchema,
     onSubmit: async (values) => {
       try {
-        const response = axios.put(`http://localhost:3000/book/${id}`, values);
+        const response = axios.put(
+          `https://mern-bookstore-x14c.onrender.com/book/${id}`,
+          values
+        );
         console.log(response);
         goHome();
       } catch (e) {
@@ -29,7 +32,9 @@ function EditBook() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/book/${id}`);
+        const response = await axios.get(
+          `https://mern-bookstore-x14c.onrender.com/book/${id}`
+        );
         formik.setValues({
           title: response.data.title,
           author: response.data.author,

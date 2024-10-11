@@ -11,7 +11,9 @@ function DeleteBook() {
   useEffect(() => {
     const deleteBook = async () => {
       try {
-        const response = await axios.delete(`http://localhost:3000/book/${id}`);
+        const response = await axios.delete(
+          `https://mern-bookstore-x14c.onrender.com/book/${id}`
+        );
 
         goHome();
       } catch (e) {

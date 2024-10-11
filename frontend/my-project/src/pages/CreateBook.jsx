@@ -18,7 +18,10 @@ function CreateBook() {
     onSubmit: async (values) => {
       try {
         console.log(values);
-        const response = await axios.post("http://localhost:3000/book", values);
+        const response = await axios.post(
+          "https://mern-bookstore-x14c.onrender.com/book",
+          values
+        );
         console.log(response);
         goHome();
       } catch (e) {
