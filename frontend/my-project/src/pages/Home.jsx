@@ -41,10 +41,10 @@ function Home() {
       ) : (
         <div>
           {" "}
-          <div className="flex justify-between px-10 py-3  ">
+          <div className="sm:flex flex justify-around sm:justify-between px-10 py-3  ">
             <div className="flex gap-1 font-serif  items-center ">
               <img className="h-10 w-10 " src={bookStoreImg} alt="" />
-              <h3 className="text-xl flex  place-items-center">
+              <h3 className="text-xl sm:flex  sm:place-items-center">
                 {" "}
                 <span className="text-red-800 text-3xl">B</span>ook{" "}
                 <span className="text-blue-800 text-3xl"> L</span>
@@ -59,13 +59,13 @@ function Home() {
                 className="   hover:text-green-600 cursor-pointer hover:scale-110 transition-transform"
                 fontSize="large"
               />
-              <p> Add Book</p>
+              <p className="hidden sm:block"> Add Book</p>
             </Link>{" "}
           </div>
-          <table className="border-separate border-spacing-2  w-full text-center">
+          <table className="border-separate border-spacing-2 w-full text-center ">
             <thead>
               <tr>
-                <th className="border border-slate-600 rounded-md">No</th>
+                <th className="border border-slate-600 rounded-md ">No</th>
                 <th className="border border-slate-600 rounded-md">Title </th>
                 <th className="border border-slate-600 rounded-md">Author</th>
                 <th className="border border-slate-600 rounded-md">
