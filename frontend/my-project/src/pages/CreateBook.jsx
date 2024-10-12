@@ -33,10 +33,10 @@ function CreateBook() {
   return (
     <div>
       <BackButton />
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex justify-center place-items-center  h-screen ">
         <div className="max-w-md mx-auto   p-6 bg-white shadow-md rounded-lg">
           <div className="flex w-full justify-center">
-            <img className="h-32 text-center " src={catReadingBook} alt="" />
+            <img className="h-28 text-center " src={catReadingBook} alt="" />
           </div>{" "}
           <h1 className="text-2xl font-bold mb-6 text-center">Create Book</h1>
           <form onSubmit={formik.handleSubmit}>

@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 
 import bookStoreImg from "../assets/bookstore.gif";
 
-import NoMoreData from "../assets/noMoreData.png";
-
 import loadingImg from "../assets/loading.gif";
 
 function Home() {
@@ -41,7 +39,7 @@ function Home() {
       ) : (
         <div>
           {" "}
-          <div className="sm:flex flex justify-around sm:justify-between px-10 py-3  ">
+          <div className="sm:flex flex justify-between p-5 sm:justify-between sm:px-10 sm:py-3  ">
             <div className="flex gap-1 font-serif  items-center ">
               <img className="h-10 w-10 " src={bookStoreImg} alt="" />
               <h3 className="text-xl sm:flex  sm:place-items-center">
@@ -53,7 +51,7 @@ function Home() {
             </div>
             <Link
               to="/create"
-              className="flex  border bg-green-800 gap-2 rounded-md p-1 text-white px-3 items-center"
+              className="flex  border bg-green-800 gap-2 rounded-md p-1.5 text-white px-3 items-center"
             >
               <AddBoxIcon
                 className="   hover:text-green-600 cursor-pointer hover:scale-110 transition-transform"
@@ -65,7 +63,9 @@ function Home() {
           <table className="border-separate border-spacing-2 w-full text-center ">
             <thead>
               <tr>
-                <th className="border border-slate-600 rounded-md ">No</th>
+                <th className="border border-slate-600 rounded-md hidden sm:block ">
+                  No
+                </th>
                 <th className="border border-slate-600 rounded-md">Title </th>
                 <th className="border border-slate-600 rounded-md">Author</th>
                 <th className="border border-slate-600 rounded-md">
@@ -89,7 +89,7 @@ function Home() {
               ) : (
                 book.map((book, index) => (
                   <tr key={index}>
-                    <td className="border border-slate-700 rounded-md text-center ">
+                    <td className="border border-slate-700 rounded-md text-center hidden sm:block ">
                       {index + 1}
                     </td>
                     <td className="border border-slate-700 rounded-md text-center ">
