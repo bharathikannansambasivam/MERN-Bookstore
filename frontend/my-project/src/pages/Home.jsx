@@ -18,7 +18,7 @@ function Home() {
     try {
       const fetchData = async () => {
         const respose = await axios.get(
-          "https://mern-bookstore-x14c.onrender.com/allbooks"
+          "https://mern-bookstore-4.onrender.com/allbooks"
         );
         const data = respose.data;
         setBook(data);

@@ -14,7 +14,7 @@ function ShowBook() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://mern-bookstore-x14c.onrender.com/book/${id}`
+          `https://mern-bookstore-4.onrender.com/book/${id}`
         );
         setBook([response.data]);
         setLoading(false);

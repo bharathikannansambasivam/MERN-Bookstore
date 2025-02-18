@@ -19,7 +19,7 @@ function EditBook() {
     onSubmit: async (values) => {
       try {
         const response = axios.put(
-          `https://mern-bookstore-x14c.onrender.com/book/${id}`,
+          `https://mern-bookstore-4.onrender.com/book/${id}`,
           values
         );
         console.log(response);
@@ -33,7 +33,7 @@ function EditBook() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://mern-bookstore-x14c.onrender.com/book/${id}`
+          `https://mern-bookstore-4.onrender.com/book/${id}`
         );
         formik.setValues({
           title: response.data.title,
